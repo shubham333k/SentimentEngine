@@ -1,113 +1,88 @@
-**Trader Performance vs Market Sentiment Analysis**
+📌 Project Overview
 
-Project Overview-
-This project analyzes how Bitcoin market sentiment (Fear vs Greed) influences trader behavior and performance on Hyperliquid.
+This project explores the intersection of behavioral finance and cryptocurrency trading. By analyzing Bitcoin market sentiment (Fear vs. Greed ) alongside granular trader data from Hyperliquid, I conducted a statistical investigation into how market "moods" influence actual trading outcomes.
 
-The objective is to uncover statistically supported patterns linking sentiment regimes to trader profitability, behavioral intensity, and risk characteristics — and to derive actionable trading insights.
+The core objective was to move beyond anecdotal evidence and provide a data-backed understanding of how sentiment regimes dictate profitability, trading intensity, and risk profiles.
 
-This submission fulfills the requirements of the Data Science / Analytics Intern Round-0 Assignment.
 
-Assignment Objectives Covered
-✔ Data cleaning and correct timestamp alignment
-✔ Creation of required performance metrics
-✔ Sentiment-based performance comparison
-✔ Behavioral analysis across regimes
-✔ Trader segmentation (2+ segments)
-✔ Statistical validation
-✔ At least 3 data-backed insights
-✔ 2 actionable strategy recommendations
-✔ Clean, reproducible notebook structure
 
-Datasets Used-
-1️⃣ Bitcoin Market Sentiment Dataset
-Dat
-Classification (Fear / Greed)
-2️⃣ Hyperliquid Historical Trader Dataset
-Includes:
-Account
-Execution Price
-Size (USD & Tokens)
-Direction (Long / Short)
-Timestamp
-Closed PnL
-Transaction metadata
 
-Methodology-
-1️⃣ Data Preparation
-Converted timestamps to datetime format
-Aggregated trade-level data to daily level
-Merged trader data with daily sentiment classification
-Verified missing values and duplicates
+🔍 Key Insights & Findings
 
-2️⃣ Feature Engineering
-Constructed trader-daily metrics:
-Daily PnL
-Total trades per day
-Win rate
-Average trade size
-Total traded volume
-Long/short ratio
-Profitability indicator
+Through rigorous statistical analysis (including Welch’s t-tests), the following patterns were identified:
 
-3️⃣ Sentiment-Based Performance Analysis
-Compared Fear vs Greed performance
-Analyzed distribution differences
-Evaluated trade frequency and position sizing
-Conducted Welch’s t-test for statistical validation
+•
+🚀 Greed Regimes & Profitability: Trading activity and average daily PnL significantly expand during "Greed" periods, suggesting a positive momentum bias.
 
-4️⃣ Trader Segmentation
-Segmented traders into:
-High vs Low Activity
-Consistent vs Inconsistent (based on win rate)
-Analyzed how each segment behaves under different sentiment regimes.
+•
+⚠️ Fear Regimes & Volatility: "Fear" environments lead to higher downside dispersion, with loss volatility widening significantly compared to Greed regimes.
 
-Key Insights-
-1️⃣ Greed regimes support profitability expansion
-Average daily PnL and trading activity are higher during Greed periods.
-2️⃣ Fear regimes increase downside dispersion
-Loss volatility and performance variability widen during Fear environments.
-3️⃣ High-activity traders are sentiment-sensitive
-Aggressive trading strategies amplify both upside and downside exposure.
-4️⃣ Consistent traders show regime resilience
-High win-rate traders maintain more stable performance across sentiment shifts.
+•
+📊 Sentiment Sensitivity: High-activity traders are the most sensitive to sentiment shifts, showing amplified upside and downside exposure.
 
-Strategy Recommendations-
-Strategy 1 — Sentiment-Aware Risk Scaling
-Reduce exposure and trade frequency during Fear regimes
-Expand controlled participation during Greed regimes
+•
+🛡️ Regime Resilience: Traders with high historical win rates demonstrate remarkable stability, maintaining consistent performance even during extreme sentiment shifts.
 
-Strategy 2 — Segment-Based Capital Allocation
-Allocate greater capital weight to consistent traders
-Limit exposure of inconsistent traders during Fear periods
-These rules improve downside containment while maintaining upside participation.
 
-Statistical Validation-
-Welch’s t-test was conducted to evaluate whether performance differences between Fear and Greed periods are statistically significant.
-This ensures conclusions are evidence-driven rather than visual-only observations.
 
-Project Structure-
-Trader-Sentiment-Analysis/
-│
-├── data/
-│   ├── sentiment.csv
-│   ├── trader_data.csv
-│
-├── analysis.ipynb
-├── README.md
-└── requirements.txt
-▶️ How to Run
 
-Clone the repository
-Install dependencies:
-pip install pandas numpy matplotlib seaborn scipy
-Place datasets inside the data/ folder
-Open analysis.ipynb
-Run all cells sequentially
+🛠️ Tech Stack & Methodology
 
-Conclusion-
-Market sentiment acts as a structural regime variable influencing trader profitability and behavioral intensity.
-Incorporating sentiment-aware exposure management and segment-based allocation improves capital efficiency and downside protection.
+Tech Stack
 
-Author: Shubham
-Role Applied: Data Science / Analytics Intern
-Submission Type: GitHub Repository
+•
+Language: Python
+
+•
+Libraries: Pandas (Data Wrangling), NumPy (Numerical Analysis), Matplotlib/Seaborn (Visualization), Scipy (Statistical Testing)
+
+•
+Environment: Jupyter Notebook
+
+Methodology
+
+1.
+Data Alignment: Synchronized high-frequency Hyperliquid trade data with daily Bitcoin Fear & Greed Index values.
+
+2.
+Feature Engineering: Developed custom metrics including Daily PnL, Win Rate, Behavioral Intensity (trades/day), and Long/Short Ratios.
+
+3.
+Statistical Validation: Applied Welch’s t-test to validate performance differences across sentiment regimes.
+
+4.
+Trader Segmentation: Categorized the user base into activity-based and performance-based segments to analyze divergent behavioral patterns.
+
+
+
+
+💡 Strategic Recommendations
+
+1. Sentiment-Aware Risk Scaling
+
+Traders should consider reducing exposure and trade frequency during "Fear" regimes to mitigate the higher downside dispersion, while expanding controlled participation during "Greed" regimes.
+
+2. Segment-Based Capital Allocation
+
+Institutional platforms can use these insights to adjust leverage limits or margin requirements dynamically based on the prevailing market sentiment and a trader's historical "regime resilience."
+
+
+
+
+📂 Project Structure
+
+•
+analysis.ipynb: The core research notebook containing data cleaning, EDA, statistical tests, and visualizations.
+
+•
+README.md: Project documentation and executive summary.
+
+
+
+
+🤝 Contact
+
+Shubham Kumar - LinkedIn - shubhamjhanjhot333k@gmail.com
+
+Project Link: https://github.com/shubham333k/Trader-Performance-vs-Market-Sentiment-Analysis
+

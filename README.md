@@ -113,7 +113,7 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 **Shubham Kumar**
 *Computer Science (AIML) Undergraduate*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham-kumar-565040253/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubhamkumar-aiml/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/shubham333k)
 
 *This project was developed as part of a Data Science Research Assignment.*
